@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="AirFootBall" customModuleProvider="target">
+            <connections>
+                <outlet property="avatarButton" destination="3Qe-nT-Ibe" id="nzC-Ug-kBT"/>
+                <outlet property="goalStepper" destination="7Xb-fE-KtD" id="fFu-Ds-pTS"/>
+                <outlet property="musicLabel" destination="8gM-hu-nm3" id="zh1-vs-Gso"/>
+                <outlet property="musicSwitch" destination="Zms-2A-vI5" id="tpc-t1-S4X"/>
+                <outlet property="numberOfGoalsLabel" destination="LsU-o8-09a" id="9o2-DT-0lx"/>
+                <outlet property="saveButton" destination="pKm-TJ-67S" id="MLK-9G-S7J"/>
+                <outlet property="settingsLabel" destination="RsV-OV-Nuf" id="Bwg-O4-ggn"/>
+                <outlet property="soundsLabel" destination="bVL-gE-64V" id="Wag-mr-lza"/>
+                <outlet property="soundsSwiftch" destination="fD4-Rr-zRr" id="F1g-zR-lEf"/>
+                <outlet property="userNameLabel" destination="f4L-NS-zdn" id="ggQ-dU-e3F"/>
+                <outlet property="userNameTextField" destination="z7b-uc-AHx" id="Vn3-Hq-ct1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="UIScrollView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="e8H-iV-59a">
+                    <rect key="frame" x="0.0" y="-50" width="414" height="1945"/>
+                    <color key="backgroundColor" systemColor="linkColor"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AyS-zg-NQE">
+                    <rect key="frame" x="20" y="70" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="A09-l7-Ihc">
+                            <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="80" id="fTc-c3-4HA">
+                            <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                        </constraint>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="backButtonClicked:" destination="-1" eventType="touchUpInside" id="DXo-Yb-PO5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKm-TJ-67S">
+                    <rect key="frame" x="147" y="787" width="120" height="40"/>
+                    <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="0.25008609594888243" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="UCm-Ua-VPl">
+                            <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="200" id="V2k-Of-vHB">
+                            <variation key="heightClass=regular-widthClass=compact" constant="120"/>
+                        </constraint>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="30"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Save" backgroundImage="button">
+                        <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                        <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="44"/>
+                    </variation>
+                    <connections>
+                        <action selector="saveSettingsClicked:" destination="-1" eventType="touchUpInside" id="UwQ-Aa-UUL"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="g0L-0B-oTS">
+                    <rect key="frame" x="107" y="242" width="200" height="412"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qe-nT-Ibe">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="350" id="OUT-TR-Wlj">
+                                    <variation key="heightClass=regular-widthClass=compact" constant="200"/>
+                                    <variation key="heightClass=regular-widthClass=regular" constant="450"/>
+                                </constraint>
+                                <constraint firstAttribute="width" constant="350" id="hsA-Zo-oK8">
+                                    <variation key="heightClass=regular-widthClass=compact" constant="200"/>
+                                    <variation key="heightClass=regular-widthClass=regular" constant="450"/>
+                                </constraint>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button" image="defaultAvatar"/>
+                            <connections>
+                                <action selector="avatarButtonClicked:" destination="-1" eventType="touchUpInside" id="WCE-qz-JkO"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="2Nr-ob-ulg">
+                            <rect key="frame" x="0.0" y="212" width="200" height="200"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7bM-Ih-opu">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="61"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4L-NS-zdn">
+                                            <rect key="frame" x="0.0" y="0.0" width="83" height="19"/>
+                                            <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="36"/>
+                                            </variation>
+                                        </label>
+                                        <textField opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z7b-uc-AHx">
+                                            <rect key="frame" x="0.0" y="27" width="200" height="34"/>
+                                            <color key="backgroundColor" systemColor="labelColor"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="xp0-ga-gXP"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wFi-os-PtL">
+                                    <rect key="frame" x="0.0" y="72" width="200" height="32"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LsU-o8-09a">
+                                            <rect key="frame" x="0.0" y="0.0" width="106" height="32"/>
+                                            <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="36"/>
+                                            </variation>
+                                        </label>
+                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minimumValue="1" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="7Xb-fE-KtD">
+                                            <rect key="frame" x="106" y="0.0" width="94" height="32"/>
+                                            <color key="backgroundColor" name="AccentColor"/>
+                                            <connections>
+                                                <action selector="goalStepper:" destination="-1" eventType="valueChanged" id="g2w-rt-gPl"/>
+                                            </connections>
+                                        </stepper>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yhg-14-U4D">
+                                    <rect key="frame" x="0.0" y="115" width="200" height="31"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gM-hu-nm3">
+                                            <rect key="frame" x="0.0" y="0.0" width="151" height="31"/>
+                                            <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="36"/>
+                                            </variation>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zms-2A-vI5">
+                                            <rect key="frame" x="151" y="0.0" width="51" height="31"/>
+                                            <color key="onTintColor" name="AccentColor"/>
+                                            <connections>
+                                                <action selector="musicSwitchClicked:" destination="-1" eventType="valueChanged" id="rJl-nA-RD4"/>
+                                            </connections>
+                                        </switch>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="vaD-yg-JM5">
+                                    <rect key="frame" x="0.0" y="157" width="200" height="43"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVL-gE-64V">
+                                            <rect key="frame" x="0.0" y="0.0" width="151" height="19"/>
+                                            <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="36"/>
+                                            </variation>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" preferredStyle="sliding" translatesAutoresizingMaskIntoConstraints="NO" id="fD4-Rr-zRr">
+                                            <rect key="frame" x="151" y="0.0" width="51" height="31"/>
+                                            <color key="onTintColor" name="AccentColor"/>
+                                            <connections>
+                                                <action selector="soundsSwitchClicked:" destination="-1" eventType="valueChanged" id="ef9-yA-Cvw"/>
+                                            </connections>
+                                        </switch>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="wFi-os-PtL" firstAttribute="width" secondItem="Yhg-14-U4D" secondAttribute="width" id="uNW-BO-Sln"/>
+                            </constraints>
+                            <variation key="heightClass=regular-widthClass=regular" spacing="29"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="vaD-yg-JM5" firstAttribute="width" secondItem="3Qe-nT-Ibe" secondAttribute="width" id="FtK-95-j0d"/>
+                        <constraint firstItem="Yhg-14-U4D" firstAttribute="width" secondItem="3Qe-nT-Ibe" secondAttribute="width" id="IyX-Ar-IXQ"/>
+                        <constraint firstItem="z7b-uc-AHx" firstAttribute="width" secondItem="3Qe-nT-Ibe" secondAttribute="width" id="nf0-Ti-YAz"/>
+                    </constraints>
+                    <variation key="heightClass=regular-widthClass=regular" spacing="21"/>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsV-OV-Nuf">
+                    <rect key="frame" x="140" y="70" width="134" height="40"/>
+                    <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="36"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="44"/>
+                    </variation>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="labelColor"/>
+            <constraints>
+                <constraint firstItem="AyS-zg-NQE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="4uk-V3-4uh">
+                    <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                </constraint>
+                <constraint firstItem="e8H-iV-59a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-50" id="Nb6-W5-cgW"/>
+                <constraint firstItem="AyS-zg-NQE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="44" id="Qej-3A-Qvr">
+                    <variation key="heightClass=regular-widthClass=compact" constant="22"/>
+                </constraint>
+                <constraint firstItem="RsV-OV-Nuf" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="RPQ-Oi-b7u"/>
+                <constraint firstItem="g0L-0B-oTS" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="YN8-Qt-tHR"/>
+                <constraint firstItem="e8H-iV-59a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dcn-Z6-OCF"/>
+                <constraint firstItem="pKm-TJ-67S" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iUZ-wi-FJn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="pKm-TJ-67S" secondAttribute="bottom" constant="35" id="k9V-WO-um1"/>
+                <constraint firstAttribute="bottom" secondItem="e8H-iV-59a" secondAttribute="bottom" constant="-999" id="moZ-38-2b4"/>
+                <constraint firstAttribute="trailing" secondItem="e8H-iV-59a" secondAttribute="trailing" id="ru8-I0-kJQ"/>
+                <constraint firstItem="g0L-0B-oTS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uNk-I3-aul"/>
+                <constraint firstItem="RsV-OV-Nuf" firstAttribute="centerY" secondItem="AyS-zg-NQE" secondAttribute="centerY" id="vzS-DT-LfH"/>
+            </constraints>
+            <point key="canvasLocation" x="100.00000000000001" y="20.089285714285712"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="300" height="282"/>
+        <image name="background" width="1080" height="1920"/>
+        <image name="button" width="1161.5" height="266.5"/>
+        <image name="defaultAvatar" width="1920" height="1920"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

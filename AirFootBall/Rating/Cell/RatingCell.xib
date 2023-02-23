@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ratingCell" focusStyle="custom" rowHeight="80" id="KGk-i7-Jjw" customClass="RatingCell" customModule="AirFootBall" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iiF-fR-dz7">
+                        <rect key="frame" x="10" y="5" width="326" height="70"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="team1" translatesAutoresizingMaskIntoConstraints="NO" id="vb9-JN-X7e">
+                                <rect key="frame" x="5" y="3" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vb9-JN-X7e" secondAttribute="height" multiplier="1:1" id="ifl-F5-CdI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChE-rG-RA1">
+                                <rect key="frame" x="77" y="24" width="51.333333333333343" height="22.333333333333329"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="golds" translatesAutoresizingMaskIntoConstraints="NO" id="76E-kO-pis">
+                                <rect key="frame" x="257" y="3" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="76E-kO-pis" secondAttribute="height" multiplier="1:1" id="JpG-gu-cMk"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.61324484149614966" alpha="0.59496413477209231" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="76E-kO-pis" secondAttribute="bottom" constant="3" id="1pd-ru-gOZ"/>
+                            <constraint firstItem="vb9-JN-X7e" firstAttribute="leading" secondItem="iiF-fR-dz7" secondAttribute="leading" constant="5" id="8RW-YU-BFR"/>
+                            <constraint firstAttribute="trailing" secondItem="76E-kO-pis" secondAttribute="trailing" constant="5" id="AIs-Oq-gtm"/>
+                            <constraint firstItem="ChE-rG-RA1" firstAttribute="centerY" secondItem="vb9-JN-X7e" secondAttribute="centerY" id="Arz-Sb-rxw"/>
+                            <constraint firstAttribute="bottom" secondItem="vb9-JN-X7e" secondAttribute="bottom" constant="3" id="Ehr-vc-ob3"/>
+                            <constraint firstItem="76E-kO-pis" firstAttribute="top" secondItem="iiF-fR-dz7" secondAttribute="top" constant="3" id="GHs-qP-yxi"/>
+                            <constraint firstItem="vb9-JN-X7e" firstAttribute="top" secondItem="iiF-fR-dz7" secondAttribute="top" constant="3" id="unT-rG-NOD"/>
+                            <constraint firstItem="ChE-rG-RA1" firstAttribute="leading" secondItem="vb9-JN-X7e" secondAttribute="trailing" constant="8" symbolic="YES" id="yK9-t2-DK6"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Esk-cZ-ERt">
+                        <rect key="frame" x="230" y="29" width="40" height="22.333333333333329"/>
+                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="iiF-fR-dz7" secondAttribute="trailing" constant="10" id="7Hu-99-V5h"/>
+                    <constraint firstItem="iiF-fR-dz7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="9hh-c7-id5"/>
+                    <constraint firstItem="Esk-cZ-ERt" firstAttribute="centerY" secondItem="76E-kO-pis" secondAttribute="centerY" id="Dh8-MP-lhx"/>
+                    <constraint firstAttribute="bottom" secondItem="iiF-fR-dz7" secondAttribute="bottom" constant="5" id="MxM-Cy-u2I"/>
+                    <constraint firstItem="iiF-fR-dz7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="PMo-r2-aB3"/>
+                    <constraint firstAttribute="trailing" secondItem="Esk-cZ-ERt" secondAttribute="trailing" constant="76" id="a7d-yh-dQW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="backgroundViewCell" destination="iiF-fR-dz7" id="M9M-cj-WK2"/>
+                <outlet property="goldLabel" destination="Esk-cZ-ERt" id="0nZ-0a-uov"/>
+                <outlet property="playerLabel" destination="ChE-rG-RA1" id="tOP-7f-NAh"/>
+                <outlet property="teamImage" destination="vb9-JN-X7e" id="SDH-hf-8E0"/>
+            </connections>
+            <point key="canvasLocation" x="24.427480916030532" y="33.098591549295776"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="golds" width="3117" height="4000"/>
+        <image name="team1" width="512" height="512"/>
+    </resources>
+</document>

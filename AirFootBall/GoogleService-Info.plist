@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>159934769655-4jl1nh80l43so011hsb4mqi49curbogp.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.159934769655-4jl1nh80l43so011hsb4mqi49curbogp</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCwax6Rr67TbzLp6WjunXs3iCN_ofO_p2o</string>
+	<key>GCM_SENDER_ID</key>
+	<string>159934769655</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Roman.Bogatchuk.AirFootBall</string>
+	<key>PROJECT_ID</key>
+	<string>color-way-e7b8c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>color-way-e7b8c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:159934769655:ios:3fab6c6a4f24c5c29e26f2</string>
+	<key>DATABASE_URL</key>
+	<string>https://color-way-e7b8c-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
